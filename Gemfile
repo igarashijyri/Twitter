@@ -3,11 +3,19 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# debug
+gem 'pry-rails'
+gem 'pry-byebug'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5"
 gem "bcrypt",  "3.1.18"
+gem "faker",           "2.21.0"
 gem "bootstrap-sass",  "3.4.1"
 gem "sassc-rails",     "2.1.2"
+gem "will_paginate",           "3.3.1"
+gem "bootstrap-will_paginate", "1.0.0"
+
 
 # test
 gem 'minitest', group: :test
